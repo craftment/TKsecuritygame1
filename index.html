@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보보안 게임</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>정보보안 게임</h1>
+        <div id="nickname-section">
+            <label for="nickname">닉네임: </label>
+            <input type="text" id="nickname" placeholder="닉네임을 입력하세요">
+            <button onclick="startGame()">게임 시작</button>
+        </div>
+
+        <div id="game-section" class="hidden">
+            <div id="question-section">
+                <h2 id="question"></h2>
+                <ul id="options-list"></ul>
+                <button id="next-btn" onclick="nextQuestion()">다음 문제</button>
+            </div>
+            <div id="result-section" class="hidden">
+                <h2>게임 종료</h2>
+                <p id="final-score"></p>
+                <button onclick="restartGame()">다시 시작</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
