@@ -29,7 +29,7 @@ h1 {
     display: none;
 }
 
-#question-section {
+#story-section {
     text-align: center;
 }
 
@@ -38,11 +38,7 @@ h1 {
     padding: 0;
 }
 
-#options-list li {
-    margin: 10px 0;
-}
-
-button {
+#options-list button {
     padding: 10px;
     background-color: #4CAF50;
     color: white;
@@ -50,6 +46,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    margin: 10px 0;
 }
 
 button:hover {
